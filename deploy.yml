@@ -14,12 +14,12 @@
         enabled: yes
 
     - name: Pull latest Docker image
-      command: docker pull gayathri731/calculator
+      command: docker pull gayathri731/calculator02
 
     - name: Remove old container if exists
       command: docker rm -f calculator || true
 
     - name: Run new container
       command: >
-        docker run -d --name calculator gayathri731/calculator python3 /app/calculator.py
+        docker run -d --name calculator gayathri731/calculator02 python3 /app/calculator02.py
 
