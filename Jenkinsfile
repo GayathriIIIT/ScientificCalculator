@@ -40,7 +40,8 @@ pipeline {
 
         stage('Deploy using Ansible') {
             steps {
-                sh 'ansible-playbook deploy.yml'
+                sh 'ansible-playbook -i inventory deploy.yml --ask-become-pass
+'
             }
         }
     }
