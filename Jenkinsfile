@@ -40,10 +40,8 @@ pipeline {
 
         stage('Deploy using Ansible') {
             steps {
-                sh 'ansible-playbook deploy.yml --ask-become-pass'
-'
+                sh 'ansible-playbook deploy.yml --ask-become-pass=False'
             }
         }
     }
 }
-
