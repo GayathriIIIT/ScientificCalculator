@@ -40,7 +40,7 @@ pipeline {
 
         stage('Deploy using Ansible') {
             steps {
-                sh 'ansible-playbook deploy.yml --become'
+                sh 'ansible-playbook deploy.yml'
             }
         }
     }
