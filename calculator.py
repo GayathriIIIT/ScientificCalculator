@@ -15,7 +15,7 @@ def power(base, exp):
 
 def main():
     while True:
-        print("\nScientific Calculator")
+        print("\nScientific Calculator:")
         print("1. Square Root (√x)")
         print("2. Factorial (x!)")
         print("3. Natural Log (ln(x))")
