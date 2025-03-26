@@ -16,19 +16,19 @@ def power(base, exp):
 def main():
     while True:
         print("\nScientific Calculator")
-        print("1. Square Root (√x)")
-        print("2. Factorial (x!)")
+        print("1. Factorial (x!)")
+        print("2. Square Root (√x)")
         print("3. Natural Log (ln(x))")
         print("4. Power (x^b)")
         print("5. Exit")
 
         choice = input("Enter choice: ")
 
-        if choice == "1":
+        if choice == "2":
             num = float(input("Enter number: "))
             print("Result:", square_root(num))
 
-        elif choice == "2":
+        elif choice == "1":
             num = int(input("Enter number: "))
             print("Result:", factorial(num))
 
